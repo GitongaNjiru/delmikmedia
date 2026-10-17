@@ -270,7 +270,7 @@ function initCostCalculator() {
     );
     const waBtn = document.getElementById('calcWhatsAppBtn');
     if (waBtn) {
-      waBtn.href = `https://wa.me/254700000000?text=${waText}`;
+      waBtn.href = `https://wa.me/254712150444?text=${waText}`;
     }
 
     // Update Mailto link
@@ -350,7 +350,7 @@ function initContactForm() {
         `• Service Needed: ${service}\n` +
         `• Project Brief: ${message}`
       );
-      window.open(`https://wa.me/254700000000?text=${waMsg}`, '_blank');
+      window.open(`https://wa.me/254712150444?text=${waMsg}`, '_blank');
     } else {
       const subject = encodeURIComponent(`New Production Inquiry from ${name}`);
       const body = encodeURIComponent(
