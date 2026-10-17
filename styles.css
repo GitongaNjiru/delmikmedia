@@ -2137,6 +2137,9 @@ dialog#videoModal[open] {
 
 /* --- Large Tablet (≤1120px): Collapse nav to hamburger --- */
 @media (max-width: 1120px) {
+  .main-nav {
+    display: none;
+  }
   .nav-links {
     position: fixed;
     top: var(--header-height);
