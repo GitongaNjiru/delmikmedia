@@ -102,7 +102,7 @@ body::before {
   background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
   background-size: 24px 24px;
   pointer-events: none;
-  z-index: 999;
+  z-index: 50;
   opacity: 0.6;
 }
 
@@ -177,18 +177,19 @@ img, video {
   left: 0;
   width: 100%;
   height: var(--header-height);
-  z-index: 100;
+  z-index: 1000;
   display: flex;
   align-items: center;
   transition: all var(--transition-normal);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(8, 9, 13, 0.65);
+  background: rgba(8, 9, 13, 0.85);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
+  overflow: visible;
 }
 
 .site-header.scrolled {
-  background: rgba(8, 9, 13, 0.92);
+  background: rgba(8, 9, 13, 0.95);
   border-bottom: 1px solid var(--border-subtle);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   height: 72px;
@@ -2158,7 +2159,7 @@ dialog#videoModal[open] {
     border-bottom: 1px solid var(--border-subtle);
     transform: translateY(-110%);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    z-index: 99;
+    z-index: 999;
     max-height: calc(100vh - var(--header-height));
     overflow-y: auto;
   }
